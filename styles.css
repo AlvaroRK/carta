@@ -1,7 +1,15 @@
-body {
+*{
     font-family: 'Quicksand', sans-serif;
-    background: linear-gradient(45deg, #a18cd1, #c4a1fb);
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardContainer{
+    background: linear-gradient(45deg, #a18cd1, #c4a1fb);
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
 }
 
 .card {
@@ -11,28 +19,10 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     text-align: center;
     max-width: 500px;
-    margin: 20px;
+    margin: auto;
     border: 2px solid #d1c4e9;
     position: relative;
     overflow: hidden;
-}
-
-.card::before, .card::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: -10px;
-    left: -10px;
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.2));
-    border-radius: 15px;
-    z-index: -1;
-}
-
-.card::after {
-    top: 10px;
-    left: 10px;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.2));
 }
 
 h1 {
